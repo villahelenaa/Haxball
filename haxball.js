@@ -34,7 +34,7 @@ function sendMessagesInBatches() {
   if (messageQueue.length > 0) {
     sendingMessages = true;
 
-    var messagesToSend = messageQueue.splice(0, 3);
+    var messagesToSend = messageQueue.splice(0, 3)
 
       .map((message) => {
         return `[${message.time}] 💬 CHAT\n**${message.player.name}**: ${message.message.replace('@', '@ ')}`;
