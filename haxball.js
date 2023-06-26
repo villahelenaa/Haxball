@@ -13,7 +13,7 @@ var gameConfig = {
     token: token,
     noPlayer: true,
     geo: region[0],
-};
+}
 
 var room = HBInit(gameConfig);
 
