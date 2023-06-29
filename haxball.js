@@ -1,6 +1,6 @@
 const roomName = '🦆 TODOS JUEGAN 🦆';
 const maxPlayers = 30;
-const roomPublic = false;
+const roomPublic = true;
 const token = roomArgs['token'];
 const region = [{ "code": "co", "lat": 4.570860, "lon": -74.297333 }];
 
@@ -51,7 +51,7 @@ let roomLink = '';
 
 let spamLiga = setInterval(() => {
     room.sendAnnouncement("🏆 Acabamos de iniciar nuestra liga y puedes crear tu propio equipo ahora mismo! Únete al discord y haz campeón a tu club: https://discord.gg/7eFj8QBnwU", null, 0xffea56, 'normal', 1);
-}, 240000);
+}, 200000);
 
 
 /* -------- FUNCIONES --------*/
@@ -346,7 +346,7 @@ room.onPlayerJoin = function (player) {
         0
     );
     room.sendAnnouncement(
-        `⚪ Reportar mala conducta de un dministrador: https://discord.gg/7eFj8QBnwU`,
+        `⚪ Reportar mala conducta de un administrador: https://discord.gg/7eFj8QBnwU`,
         player.id,
         null,
         'normal',
